@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CreditCardValidator {
+public class Module1Programming(2) {
 
     public static boolean isValid(long number) {
         int size = getSize(number);

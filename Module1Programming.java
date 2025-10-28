@@ -1,4 +1,4 @@
-public class ConversionTest {
+public class Module1Programming {
 
     public static double footToMeter(double foot) {
         return 0.305 * foot;
@@ -21,4 +21,5 @@ public class ConversionTest {
         }
     }
 }
+
 

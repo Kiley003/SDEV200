@@ -1,12 +1,10 @@
 public class Module1Programming {
 
     public static double footToMeter(double foot) {
-        return 0.305 * foot;
-    }
+        return 0.305 * foot;}
 
     public static double meterToFoot(double meter) {
-        return 3.279 * meter;
-    }
+        return 3.279 * meter;}
 
     public static void main(String[] args) {
         System.out.printf("%-10s%-10s | %-10s%-10s%n", "Feet", "Meters", "Meters", "Feet");
@@ -21,5 +19,6 @@ public class Module1Programming {
         }
     }
 }
+
 
 

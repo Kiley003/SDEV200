@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Module1Programming(2) {
 
     public static boolean isValid(long number) {
@@ -8,46 +6,40 @@ public class Module1Programming(2) {
         boolean validPrefix = prefixMatched(number, 4) || prefixMatched(number, 5) ||
                               prefixMatched(number, 37) || prefixMatched(number, 6);
         int total = sumOfDoubleEvenPlace(number) + sumOfOddPlace(number);
-        return validLength && validPrefix && total % 10 == 0;
-    }
+        return validLength && validPrefix && total % 10 == 0;}
 
     public static int sumOfDoubleEvenPlace(long number) {
         String numStr = Long.toString(number);
         int sum = 0;
         for (int i = numStr.length() - 2; i >= 0; i -= 2) {
             int digit = Character.getNumericValue(numStr.charAt(i));
-            sum += getDigit(digit * 2);
-        }
-        return sum;
-    }
+            sum += getDigit(digit * 2);}
+        return sum;}
 
     public static int getDigit(int number) {
         if (number < 10) return number;
-        return number / 10 + number % 10;
-    }
+        return number / 10 + number % 10;}
 
     public static int sumOfOddPlace(long number) {
         String numStr = Long.toString(number);
         int sum = 0;
         for (int i = numStr.length() - 1; i >= 0; i -= 2) {
-            sum += Character.getNumericValue(numStr.charAt(i));
-        }
-        return sum;
-    }
+            sum += Character.getNumericValue(numStr.charAt(i));}
+
+        return sum;}
 
     public static boolean prefixMatched(long number, int d) {
         int prefixSize = getSize(d);
-        return getPrefix(number, prefixSize) == d;
-    }
+        return getPrefix(number, prefixSize) == d;}
+
     public static int getSize(long d) {
-        return Long.toString(d).length();
-    }
+        return Long.toString(d).length();}
+
 
     public static long getPrefix(long number, int k) {
         String numStr = Long.toString(number);
         if (numStr.length() < k) return number;
-        return Long.parseLong(numStr.substring(0, k));
-    }
+        return Long.parseLong(numStr.substring(0, k));}
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

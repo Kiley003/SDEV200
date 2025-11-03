@@ -8,7 +8,7 @@ Enter list1: 51 5 22 6 1 4 24 54 6
 Enter list2: 51 22 25 6 1 4 24 54 6
 The two arrays are not identical
   
-/*
+*/
   
 public class Module1Programming(3)
   

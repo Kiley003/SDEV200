@@ -1,5 +1,6 @@
-/** Design a class named MyDate. */
-
 import java.util.Calendar;
 
 public class MyDate
+  private int year;
+	private int month;
+	private int day;

@@ -82,6 +82,15 @@ public class Weather {
     }
 }
 
+            //*test class for overall conditions*//
+            public class WeatherAppTest {
+
+    public void testLocation() {
+        Location location = new Location("Salem", "USA");
+        assertEquals("Salem", location.getCity());
+        assertEquals("USA", location.getCountry());
+        assertEquals("Salem, USA", location.toString());
+    }
 
         }
     }

@@ -3,8 +3,7 @@
 import java.net.HttpURLConnection;
 import java.net.URL;
 import weather
-import javax.swing.*;
-import java.awt.
+import JavaFX
 
 public class WeatherApp {
     private static final String appName = "WeatherApp";
